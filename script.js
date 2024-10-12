@@ -12,7 +12,7 @@ const weatherSummaryImg = document.querySelector('.weather-summary-img');
 const currentDateText = document.querySelector('.current-date-text');
 const forecastItemsContainer = document.querySelector('.forecast-items-container')
 
-const apiKey = process.env.REACT_APP_API_KEY;
+const apiKey = 'a76b6c9742e15ed6cc9ba0ada1625d7b';
 console.log('API Key:', apiKey);
 
 
