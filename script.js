@@ -13,6 +13,8 @@ const currentDateText = document.querySelector('.current-date-text');
 const forecastItemsContainer = document.querySelector('.forecast-items-container')
 
 const apiKey = process.env.REACT_APP_API_KEY;
+console.log('API Key:', apiKey);
+
 
 searchBtn.addEventListener('click', () => {
     if (cityInput.value.trim() != '') {
