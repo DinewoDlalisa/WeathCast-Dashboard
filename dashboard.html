@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WeatherCast Dashboard</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="icon" type="image/png" href="assets/images/4.png">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <img src="assets/images/4.png" alt="WeatherCast Logo" class="logo">
+
+
+        <main class="main-container">
+           
+           <header class="input-container">
+             <input type="text" class="city-input" placeholder="Search for your city ...">
+             <button class="search-btn">
+                <span class="material-symbols-outlined">
+                    search
+                </span>
+             </button>
+           </header>
+
+           <section class="weather-information" style="display: none;">
+                <div class="location-data-container">
+                    <div class="location">
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+                        <h4 class="country-text">South Africa</h4>
+                        <h5 class="current-date-text regular-text">Fri, 05 October</h5>
+                    </div>
+                </div>
+
+                <div class="weather-summary-container">
+                    <img src="assets/weather/icons8-partly-cloudy-day-96.png" class="weather-summary-img">
+                    <div class="weather-summary-information">
+                        <h1 class="temperature-text">30°C</h1>
+                        <h3 class="condition-text regular-text">Clouds</h3>
+                    </div>
+                </div>
+
+                <div class="weather-conditions">
+                    <div class="weather-condition-box">
+                        <span class="material-symbols-outlined">
+                            water_drop
+                        </span>
+                        <div class="condition-information">
+                            <h5 class="regular-text">Humidity</h5>
+                            <h5 class="humidity-value-text">55%</h5>
+                        </div>
+                    </div>
+
+                    <div class="weather-condition-box">
+                        <span class="material-symbols-outlined">
+                            air
+                        </span>
+                        <div class="condition-information">
+                            <h5 class="regular-text">Wind Speed</h5>
+                            <h5 class="wind-value-text">20 km/h</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="forecast-items-container">
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date regular-text"> 05 October 2024</h5>
+                        <img src="assets/weather/icons8-storm-96.png"  class="forecast-item-img">
+                        <h5 class="forecast-item-temperature"> 15°C</h5>
+                    </div>
+
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date regular-text"> 05 October 2024</h5>
+                        <img src="assets/weather/icons8-storm-96.png"  class="forecast-item-img">
+                        <h5 class="forecast-item-temperature"> 15°C</h5>
+                    </div>
+
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date regular-text"> 05 October 2024</h5>
+                        <img src="assets/weather/icons8-storm-96.png"  class="forecast-item-img">
+                        <h5 class="forecast-item-temperature"> 15°C</h5>
+                    </div>
+
+                    <div class="forecast-item">
+                        <h5 class="forecast-item-date regular-text"> 05 October 2024</h5>
+                        <img src="assets/weather/icons8-storm-96.png"  class="forecast-item-img">
+                        <h5 class="forecast-item-temperature"> 15°C</h5>
+                    </div>
+                </div>
+           </section>
+
+           <section class="search-city section-message">
+             <img class="message-img" src="assets/message/glazy-magnifying-glass.png">
+             <div>
+                <h1>Search City</h1>
+                <h4 class="regular-text">
+                    Find out the weather conditions of the city 
+                </h4>
+             </div>
+           </section>
+
+           <section class="not-found section-message" style="display: none;">
+           <img class="message-img" src="assets/message/chromed-404-not-found-error-page.png">
+           <div>
+              <h1>Search City</h1>
+              <h4 class="regular-text">
+                  Find out the weather conditions of the city 
+              </h4>
+           </div>
+         </section>
+            
+        </main>
+
+    </body>
+</html>

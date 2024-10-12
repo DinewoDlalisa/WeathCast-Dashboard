@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+body {
+    background: url(assets/images/Desktop\ -\ 3.png) no-repeat center center fixed;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(10px); 
+    z-index: -1; 
+}
+
+.regular-text {
+    font-weight: 400;
+}
+.logo {
+    position: fixed; 
+    top: 20px;
+    left: 20px; 
+    width: 80px; 
+    height: auto; 
+    z-index: 1000; 
+}
+
+.main-container {
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); 
+    height: 496px;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.1); 
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+
+.city-input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    color: white;
+    outline: none;
+    font-size: 16px;
+    border-radius: 99px; 
+    transform: 0.25s border;
+}
+
+.city-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.search-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.weather-information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.condition-information {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.country-text {
+    font-size: 18px;
+}
+
+.current-date-text {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.weather-summary-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-summary-img {
+    width: 70px;
+    height: 70px;
+}
+
+.weather-summary-information {
+    text-align: right;
+}
+
+.temperature-text {
+    font-size: 28px;
+}
+
+.condition-text {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.weather-conditions {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.weather-condition-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.weather-condition-box span {
+    font-size: 24px;
+}
+
+.condition-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.forecast-items-container{
+    display: flex;
+    gap: 15px;
+    overflow: scroll;
+    padding-bottom: 12px;
+}
+
+
+.forecast-items-container::-webkit-scrollbar{
+    height: 8px;
+}
+
+
+.forecast-items-container::-webkit-scrollbar-track {
+    background:rgba(0, 0, 0, 0.1);
+    border-radius: 99px;
+
+}
+.forecast-items-container::-webkit-scrollbar-thumb{
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 99px;
+}
+
+
+.forecast-item{
+    min-width: 70px;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 10px;
+    align-items: center;
+    border-radius:  12px;
+    transition: 0.3s background;
+}
+
+.forecast-item:hover{
+    background: rgba(255, 255, 255, 0.15);
+
+}
+
+.forecast-item-img{
+    width: 35px;
+    height: auto;
+}
+.section-message{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+    margin-top: 25%;
+}
+.section-message img{
+    height: 180px;
+    width: fit-content;
+
+}
+@media (max-width: 600px) {
+    .main-container {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+    .weather-conditions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
