@@ -43,11 +43,12 @@ body, html {
 .get-started-btn {
     background-color: #A26C02; 
     color: white;
-    padding: 20px 50px;
-    font-size: 1.2rem;
+    padding: 10px 60px;
+    font-size: 11px;
+    font-weight: bold;
     font-family: Poppins;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     cursor: pointer;
     margin-top: 2rem;
     transition: background-color 0.3s ease;
